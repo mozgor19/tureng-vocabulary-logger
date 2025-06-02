@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tureng Kelime Listem</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kaydedilen Kelimeler</h1>
+    <button id="downloadCsv">Listeyi CSV Olarak İndir</button>
+    <button id="clearList" title="Tüm listeyi temizler!">Listeyi Temizle</button>
+    <div style="margin-top: 20px; padding: 10px; background-color: #e9f5ff; border-left: 5px solid #007bff; font-size: 0.9em; color: #333;">
+      <p><strong>Verileriniz Güvende!</strong></p>
+      <p>Kaydettiğiniz kelimeler tarayıcınızda güvenle saklanır. Siz bu eklentiyi Chrome'dan kaldırmadıkça veya tarayıcınızın depolama alanını özellikle temizlemedikçe verileriniz <strong>otomatik olarak silinmez.</strong></p>
+      <p>Kelimelerinizi yedeklemek için "Listeyi CSV Olarak İndir" butonunu kullanarak düzenli olarak dışa aktarmanız iyi bir pratiktir.</p>
+    </div>
+    <div class="table-container">
+      <table id="vocabularyTable">
+        <thead>
+          <tr>
+            <th>İngilizce Kelime</th>
+            <th>Türkçe Anlamı</th>
+            <th>İngilizce Tanımı</th>
+            <th>Örnek Cümle</th>
+            <th>Tekrar Sayısı</th>
+            <th>Eklendiği Tarih</th>
+            <th>Sil</th>
+          </tr>
+        </thead>
+        <tbody>
+          </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="lib/xlsx.full.min.js"></script> <script src="table_view.js"></script>
+  <script src="table_view.js"></script>
+</body>
+</html>

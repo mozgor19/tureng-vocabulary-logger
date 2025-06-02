@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Tureng Vocabulary Logger",
+  "version": "1.0",
+  "description": "Tureng'de aratılan İngilizce kelimeleri kaydeder ve Oxford Dictionary'den tanımlar ekler.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "downloads",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://tureng.com/*",
+    "https://od-api.oxforddictionaries.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://tureng.com/en/turkish-english/*", "https://tureng.com/tr/turkce-ingilizce/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
