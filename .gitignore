@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbs.db Windows
+Thumbs.db
+
+# Build/dist outputs (eğer eklentiyi paketliyorsan ve bu paketleri repoya göndermek istemiyorsan)
+# *.zip
+# dist/
+# build/
+
+# IDE/Editor klasörleri (isteğe bağlı, kişisel tercihe göre)
+# .vscode/
+# .idea/
