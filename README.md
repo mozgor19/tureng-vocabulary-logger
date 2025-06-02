@@ -47,4 +47,35 @@ Bu eklentiyi Google Chrome tarayıcınıza yüklemek için aşağıdaki adımlar
 5.  Bu yeni sekmede, kelime listenizi görüntüleyebilir, "Listeyi Excel Olarak İndir" butonuyla `.xlsx` formatında bilgisayarınıza indirebilir veya "Listeyi Temizle" butonuyla tüm kayıtları silebilirsiniz.
 
 ---
+
+## 🔮 Gelecek Güncellemeler
+
+Bu eklenti aktif olarak geliştirilmeye devam etmektedir. Zaman içerisinde eklenmesi planlanan özellikler şunlardır:
+
+* **Mobil Versiyon:**
+    * Uygulama şu anda yalnızca masaüstünde çalışabilmektedir. Yakında mobil versiyonu da hizmete girecektir. Katkı sunmak isterseniz lütfen pull-request atmaktan çekinmeyin.
+
+* **Gelişmiş Arayüz ve Kullanıcı Deneyimi:**
+    * Kelime listesi sayfasında (yeni sekmede açılan) kelimeler içinde **arama yapma ve filtreleme** özelliği.
+    * Kelimeleri alfabetik, eklenme tarihine veya tekrar sayısına göre **sıralama** seçenekleri.
+    * Ezberlemeyi kolaylaştırmak için **kelime kartları (flashcard) modu**.
+    * Kaydedilen kelime listesinin mobil cihazlarda daha iyi görüntülenmesi için **duyarlı tasarım (responsive design)** iyileştirmeleri.
+
+* **Tanım ve Örnek Cümle Zenginleştirmesi:**
+    * İngilizce kelimenin Tureng'deki farklı Türkçe anlamlarına karşılık gelebilecek **daha spesifik İngilizce tanımları bulma ve eşleştirme** konusunda iyileştirmeler
+    * Eğer Tureng veya mevcut sözlük API'si yeterli örnek cümle sağlamazsa, **LLM (Büyük Dil Modelleri) kullanarak otomatik ve bağlama uygun örnek cümle üretimi** entegrasyonu.
+    * Kullanıcının **manuel olarak kendi örnek cümlelerini veya notlarını** ekleyebilmesi.
+    * Birden fazla ücretsiz sözlük kaynağından (örneğin Wordnik, Google Dictionary vb. alternatifleri) tanım çekme seçeneği sunma.
+
+* **Veri Yönetimi ve Entegrasyon:**
+    * Kelimeleri "öğrenildi", "tekrar et" gibi farklı kategorilere ayırma veya etiketleme.
+    * `chrome.storage.sync` kullanarak (limitler dahilinde) kaydedilen kelimelerin farklı Chrome tarayıcıları arasında **senkronize edilmesi** (kullanıcının Chrome'da oturum açmış ve senkronizasyonu etkinleştirmiş olması koşuluyla).
+    * Popüler ezberleme uygulamalarıyla (Anki gibi) veri alışverişi için dışa/içe aktarma formatları desteği.
+
+* **Ayarlar ve Özelleştirme:**
+    * Hangi bilgilerin (örnek cümle, İngilizce tanım vb.) otomatik olarak çekileceğine dair kullanıcı ayarları.
+    * Eklenti arayüzü için tema seçenekleri (koyu mod gibi).
+
+---
+
 **Not:** Bu eklenti kişisel kullanım ve İngilizce öğrenimine yardımcı olmak amacıyla geliştirilmiştir. Tureng.com veya DictionaryAPI.dev sitelerinin API kullanım koşullarına ve hizmet şartlarına uymak kullanıcının sorumluluğundadır.
